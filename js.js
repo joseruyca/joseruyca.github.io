@@ -68,7 +68,7 @@ function changeLevel(level) {
       break;
     case 8:
       printGameText("Un calambre comienza a recorrerte la espalda y notas como el tiempo pasa mucho mas lento ");
-      printGameText("En un arrebato de adrenalina, furia y rabia ves tu vida pasar: el ciberparkour, el ciberskate, el ciberferial, la cibersubida al deposito, los ciberbotellones en el ciberxigxag, la cibercamisa mojada la defecacion en ciberbolsa, el ciberguantazo... ");
+      printGameText("En un arrebato de adrenalina, furia y rabia ves tu vida pasar: el ciberparkour, el ciberskate, el ciberferial, la cibersubida al deposito, el ciber-robo de una viga amarilla de más de 2 metros en cibernalmadena, los ciberbotellones en el ciberxigxag, la cibercamisa mojada,la defecacion en ciberbolsa,  ");
        printGameText("Hasta recordar el momento en el que la ciber-ciborg de leds anaranjados te regalo el artilugio conocido como Sandevistan ");
         printGameText("Aprovechando este poder nacido del amor y la amistad esqivas uno tras otro los golpes del ciborg de barba anaranjada");
         printGameText("¿Donde asestas el golpe final?");
