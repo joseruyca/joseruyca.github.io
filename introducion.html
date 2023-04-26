@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>¡Bienvenido a la máquina recreativa!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Enlace a tu archivo CSS -->
+  <link rel="stylesheet" type="text/css" href="estilointroducion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script>
+    function typeWriter(text, i, fnCallback) {
+      if (i < text.length) {
+        document.getElementById("typed-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(function () {
+          typeWriter(text, i, fnCallback);
+        }, 60);
+      } else if (typeof fnCallback == "function") {
+        setTimeout(fnCallback, 1400);
+      }
+    }
+
+    function startTextAnimation() {
+      var text = document.getElementById("typed-text").getAttribute("data-text");
+      if (text) {
+        typeWriter(text, 0, function () {
+          console.log("Animation finished!");
+        });
+      }
+    }
+  </script>
+</head>
+<body onload="startTextAnimation()">
+  <div class="maquina-recreativa">
+    <div class="mensaje">
+      <h1>inicio</h1>
+      <div id="typed-text" data-text="En la ciudad de Neo-Dublin, un detective ciberpunk llamado OS-Cowboy, de complexión fuerte, trabajaba en un almacén durante el día y en la noche se dedicaba a resolver casos. La ciudad estaba llena de tecnología avanzada y neones brillantes, pero también había oscuridad y corrupción en cada rincón. OS-Cowboy era conocido por su habilidad para resolver incluso los casos más complicados, utilizando sus habilidades como detective y su conocimiento de la tecnología cibernética. Estaba decidido a hacer lo que fuera necesario para llevar a los delincuentes ante la justicia, aunque eso significara ponerse en peligro. Con su ingenio, inteligencia y determinación, OS-Cowboy se enfrentaba a cualquier desafío que se le presentara en su trabajo como detective ciberpunk...
+      Un día al llegar a su casa subterranea localizada en el numero 20 de la calle Frecyberick North iluminada con neones, Un ciberyonki, sin mediar palabra, le entrega una memoria usb y, acto seguido, sale volando en la recientemente robada ciberbici de OS-Cowboy. Tras la caida que sufrió esa misma mañana en su ciberducha de iones, desconectando algunos de sus modulos e implantes OS-Cowboy pensaba que su día no podia ir a peor.
+        Sin embargo, OS-Cowboy, sorprendido, sabía que ha llegado su hora.
+      Solamente una persona en la ciudad podria desencriptar la información contenida en tan anacronico dispositivo.
+
+"></div>
+    </p>
+    </div>
+   <a href="final.html"> <button href="final.html" class="boton-comenzar"></button></a>
+  </div>
+</body>
+</html>
